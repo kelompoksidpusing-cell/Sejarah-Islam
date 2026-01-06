@@ -3,89 +3,149 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sejarah Perkembangan Islam di Indonesia Abad VII–XIII</title>
+<title><b>Sejarah Perkembangan Islam di Indonesia Abad VII–XIII</b></title>
 
 <style>
-  .gambar{
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 15px auto;
-  border-radius: 10px;
+/* ===== GLOBAL ===== */
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#efe1c6;
+  line-height:1.6;
 }
+.hidden{display:none;}
+mark{background:yellow;}
 
-body {
-  background-color: #efe1c6; /* cream estetik */
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  line-height: 1.6;
-
-}
-header{
-  background: #6a4e3b;
-  color:#fff;
-  padding:22px;
-  text-align:center;
-}
-nav{
-  background-color: #5C4433;
+/* ===== HEADER ===== */
+.top-header{
   display:flex;
-  justify-content:center
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 28px;
+  background:#6a4e3b;
+  color:#fff;
+}
+.top-header h1{
+  font-size:20px;
+  margin:0;
+}
 
+/* ===== SEARCH ===== */
+.search-box{position:relative;}
+.search-box input{
+  padding:8px 12px;
+  border-radius:6px;
+  border:none;
+  width:220px;
+}
+#searchResults{
+  position:absolute;
+  top:38px;
+  right:0;
+  background:#ffffff89;
+  width:100%;
+  border-radius:6px;
+  box-shadow:0 2px 6px rgba(0,0,0,.2);
+  display:none;
+  z-index:10;
+}
+#searchResults div{
+  padding:8px;
+  cursor:pointer;
+}
+#searchResults div:hover{background:#eee;}
+
+/* ===== HERO ===== */
+.hero{
+  height:320px;
+  background:url('hero.jpg') center/cover no-repeat;
+}
+.hero-overlay{
+  height:100%;
+  background:rgba(0,0,0,.45);
+  color:#fff;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+
+/* ===== NAV ===== */
+nav{
+  background:#5C4433;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
 }
 nav button{
   background:none;
   border:none;
-  color:#FFFFFF;
-  padding:14px 18px;
+  color:#fff;
+  padding:12px 16px;
   cursor:pointer;
-  font-size:14px;
-  transition: 0,3s;
 }
-nav button:hover{
-  background: #8b6b4f;;
-}
-.content{
-  padding:20px;
-}
+nav button:hover{background:#8b6b4f;}
+
+/* ===== CONTENT ===== */
+.content{padding:30px;}
 .card{
   background:#FBF8F2;
   padding:30px;
-  border-radius:8px;
+  border-radius:10px;
   max-width:1200px;
   margin:auto;
-  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  animation:fade .4s ease;
 }
-.hidden{display:none;}
+@keyframes fade{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+.gambar{
+  width:100%;
+  max-width:600px;
+  display:block;
+  margin:18px auto;
+  border-radius:10px;
+}
 h2,h3,h4{color:#be781b;}
+
+/* ===== FOOTER ===== */
 footer{
   text-align:center;
-  padding:15px;
+  padding:16px;
   font-size:13px;
-  color:#666;
+  color:#555;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Sejarah Perkembangan Islam di Indonesia</h1>
-<p>Abad VII – Abad XIII Masehi</p>
+<!-- ===== HEADER ===== -->
+<header class="top-header">
+  <h1>Sejarah Perkembangan Islam di Indonesia</h1>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Cari kata / bab..." oninput="liveSearch()">
+    <div id="searchResults"></div>
+  </div>
 </header>
 
+<!-- ===== NAV ===== -->
 <nav>
-<button onclick="show('abad7')">Abad VII</button>
-<button onclick="show('abad8')">Abad VIII</button>
-<button onclick="show('abad9')">Abad IX</button>
-<button onclick="show('abad10')">Abad X</button>
-<button onclick="show('abad11')">Abad XI</button>
-<button onclick="show('abad12')">Abad XII</button>
-<button onclick="show('abad13')">Abad XIII</button>
+  <button onclick="show('home')">Beranda</button>
+  <button onclick="show('abad7')">Abad VII</button>
+  <button onclick="show('abad8')">Abad VIII</button>
+  <button onclick="show('abad9')">Abad IX</button>
+  <button onclick="show('abad10')">Abad X</button>
+  <button onclick="show('abad11')">Abad XI</button>
+  <button onclick="show('abad12')">Abad XII</button>
+  <button onclick="show('abad13')">Abad XIII</button>
 </nav>
 
+<!-- ===== CONTENT ===== -->
 <div class="content">
 <div class="card">
+<<<<<<< HEAD
   <!-- ================= HALAMAN DEPAN ================= -->
 <div id="home">
 
@@ -109,13 +169,26 @@ footer{
   <h4> Nisma Gita Paputungan</h2>
   <h4> Anindita Mifta</h2>
   <h4> Rafif Rahidan</h2>
+=======
+>>>>>>> 149bb43 (Upload Website sejarah Islam)
 
+<div id="home" class="section">
+<h2>Menelusuri Awal Masuknya Islam di Indonesia</h2>
+<img src="judul2.png" class="gambar">
+<p>Islam masuk ke Indonesia melalui perdagangan, budaya, dan dakwah damai sejak abad ke-7.</p>
+<p>Website ini menyajikan perjalanan Islamisasi Nusantara secara ringkas, ilmiah, dan mudah dipahami.</p>
+<h3>Anggota Kelompok</h3>
+<ul>
+  <li>Nur Afni Oktavia</li>
+  <li>Nisma Gita Paputungan</li>
+  <li>Anindita Mifta</li>
+  <li>Rafif Rahidan</li>
+</ul>
 </div>
-<!-- =============== AKHIR HALAMAN DEPAN =============== -->
 
-
-<!-- ================= ABAD VII ================= -->
-<div id="abad7" class="hidden">
+<div class="card">
+<!-- ===== ABAD VII ===== -->
+<div id="abad7" class="section hidden">
 <h2>Abad VII – Masuknya Islam Melalui Teori-teori Sejarah</h2>
 
 <p>Masuknya Islam ke Indonesia tidak terjadi secara tiba-tiba dan tidak melalui satu jalur tunggal. Para sejarawan mengemukakan beberapa teori mengenai asal-usul masuknya Islam ke Nusantara. Perbedaan teori ini muncul karena beragamnya sumber sejarah, bukti arkeologis, serta jalur perdagangan yang menghubungkan Indonesia dengan dunia luar sejak awal Masehi.</p>
@@ -160,8 +233,9 @@ footer{
 <p>Bukti lainnya adalah adanya raja Islam keturunan Tiongkok di Jawa, yaitu Raden Fatah, pendiri dan raja pertama Kerajaan Demak. Selain itu, terdapat kelompok masyarakat pesisir Jawa Timur yang berasal dari Tiongkok dan mayoritas memeluk agama Islam.</p>
 </div>
 
-<!-- ================= ABAD VIII ================= -->
-<div id="abad8" class="hidden">
+
+<!-- ===== ABAD VIII ===== -->
+<div id="abad8" class="section hidden">
 <h2>Perkembangan Islam di Nusantara pada Abad VIII (700–800 M)</h2>
 
 <h3>1. Kondisi Dunia Islam pada Abad VIII</h3>
@@ -220,8 +294,10 @@ footer{
 <p>Pada abad VIII, masyarakat Nusantara masih menganut agama Hindu-Buddha dan kepercayaan lokal. Islam baru dikenal di wilayah pesisir dan penyebarannya masih bersifat non-formal dengan dampak sosial budaya.</p>
 
 </div>
-<!-- ================= ABAD IX ================= -->
-<div id="abad9" class="hidden">
+</div>
+
+<!-- ===== ABAD IX ===== -->
+<div id="abad9" class="section hidden">
 <h2>Perkembangan Islam di Nusantara pada Abad IX (800–900 M)</h2>
 
 <h3>1. Kondisi Dunia Islam pada Abad IX</h3>
@@ -347,6 +423,7 @@ footer{
 <p>Islam diterima secara bertahap oleh masyarakat pesisir, sementara wilayah pedalaman masih didominasi oleh pengaruh Hindu-Buddha.</p>
 </div>
 
+<<<<<<< HEAD
 <!-- ================= ABAD X ================= -->
 <div id="abad10" class="hidden">
 <h2>Perkembangan Islam di Nusantara pada Abad X (900–1000 M)</h2>
@@ -412,9 +489,16 @@ footer{
 <p>b. Belum ada kerajaan Islam, tapi fondasi komunitas Muslim sudah terbentuk.</p>
 <p>c. Hubungan ekonomi dan sosial dengan dunia Islam semakin erat.</p>
 <p>d. Abad X = masa transisi dari Islam sebagai agama pedagang ke Islam sebagai kekuatan sosial-budaya lokal.</p>
+=======
+>>>>>>> 149bb43 (Upload Website sejarah Islam)
 
+<!-- ===== ABAD X ===== -->
+<div id="abad10" class="section hidden">
+<h2>Abad X</h2>
+<p>Islam mulai mengakar sebagai kekuatan sosial.</p>
 </div>
 
+<<<<<<< HEAD
 <!-- ================= ABAD XI ================= -->
 <div id="abad11" class="hidden">
 <h2>Perkembangan Islam di Nusantara pada Abad XI (1000–1100 M)</h2>
@@ -530,90 +614,69 @@ footer{
 
 <img src="tugas-islam/abad10-5.png" class="gambar">
 <p>Islamisasi pada abad XI berlangsung secara damai dan bertahap. Islam diterima sebagai agama yang mampu menyesuaikan diri dengan budaya lokal tanpa menghilangkan identitas masyarakat Nusantara.</p>
+=======
+<!-- ===== ABAD XI ===== -->
+<div id="abad11" class="section hidden">
+<h2>Abad XI</h2>
+<p>Komunitas Muslim menetap permanen.</p>
+>>>>>>> 149bb43 (Upload Website sejarah Islam)
 </div>
 
-<!-- ================= ABAD XII ================= -->
-<div id="abad12" class="hidden">
-<h2>Perkembangan Islam di Nusantara pada Abad XII (1100–1200 M)</h2>
-
-<h3>1. Kondisi Umum Abad XII</h3>
-
-<p>Abad XII merupakan periode penting dalam sejarah Islamisasi Nusantara. Pada masa ini, Islam tidak lagi hanya dikenal di wilayah pesisir, tetapi mulai menyebar ke wilayah yang lebih luas.</p>
-
-<p>Secara global, dunia Islam menghadapi tantangan seperti Perang Salib, namun aktivitas perdagangan dan penyebaran agama tetap berlangsung.</p>
-
-<h3>2. Peran Ulama dan Tasawuf</h3>
-
-<p>Salah satu faktor utama keberhasilan Islamisasi pada abad XII adalah peran ulama dan ajaran tasawuf. Tasawuf menawarkan pendekatan spiritual yang mudah diterima oleh masyarakat Nusantara yang sebelumnya memiliki tradisi mistik dan kepercayaan lokal.</p>
-
-<p>Para sufi menyampaikan ajaran Islam melalui dakwah yang lembut, simbolik, dan penuh toleransi.</p>
-
-<h3>3. Islam dan Budaya Lokal</h3>
-
-<p>Pada abad XII, Islam berkembang melalui proses akulturasi budaya. Nilai-nilai Islam disampaikan tanpa menghapus tradisi lokal, melainkan memberikan makna baru yang sejalan dengan ajaran Islam.</p>
-
-<p>Hal ini menyebabkan Islam diterima secara luas oleh masyarakat tanpa konflik sosial yang berarti.</p>
-
-<h3>4. Perluasan Wilayah Islam</h3>
-
-<p>Islam pada abad XII mulai menjangkau wilayah pedalaman. Meskipun pusat-pusat Islam masih berada di pesisir, pengaruhnya mulai terasa di daerah-daerah non-pesisir.</p>
-
-<p>Hubungan antara pedagang, ulama, dan masyarakat lokal menjadi kunci utama perluasan wilayah Islam.</p>
-
-<h3>5. Dampak Sosial dan Keagamaan</h3>
-
-<p>Islam mulai membentuk pola kehidupan sosial masyarakat. Nilai-nilai seperti keadilan, persaudaraan, dan kesetaraan mulai diterapkan dalam kehidupan sehari-hari.</p>
-
-<p>Abad XII menjadi masa transisi menuju terbentuknya kekuatan politik Islam di Nusantara.</p>
-</div>
-<!-- ================= ABAD XIII ================= -->
-<div id="abad13" class="hidden">
-<h2>Perkembangan Islam di Nusantara pada Abad XIII (1200–1300 M)</h2>
-
-<h3>1. Kondisi Umum Abad XIII</h3>
-         
-
-<p>Abad XIII Masehi merupakan fase percepatan Islamisasi di Nusantara. Pada periode ini, Islam tidak hanya berkembang sebagai agama, tetapi juga sebagai kekuatan sosial dan politik. Proses penyebaran Islam yang telah berlangsung sejak abad-abad sebelumnya mencapai puncaknya.</p>
-
-<p>Jalur perdagangan laut Samudra Hindia tetap menjadi sarana utama penyebaran Islam. Hubungan dagang yang intensif antara Nusantara dengan dunia Islam mendorong terbentuknya pusat-pusat kekuasaan Islam.</p>
-
-<h3>2. Berdirinya Kerajaan Islam Awal</h3>
-
-<p>Salah satu peristiwa terpenting pada abad XIII adalah berdirinya kerajaan Islam pertama di Indonesia, yaitu Kerajaan Samudera Pasai di pesisir utara Sumatra.</p>
-
-<p>Kerajaan ini berkembang sebagai pusat perdagangan dan penyebaran Islam. Sultan Malik al-Saleh dikenal sebagai raja Islam pertama di Nusantara.</p>
-
-<h3>3. Peran Ulama dan Pedagang</h3>
-
-<p>Pada abad XIII, ulama dan pedagang memiliki peran yang sangat besar dalam penyebaran Islam. Ulama berperan dalam pendidikan dan dakwah, sedangkan pedagang memperkuat jaringan ekonomi dan sosial.</p>
-
-<p>Kombinasi antara kekuatan spiritual dan ekonomi membuat Islam berkembang pesat dan diterima oleh berbagai lapisan masyarakat.</p>
-
-<h3>4. Islam sebagai Kekuatan Sosial-Politik</h3>
-
-<p>Islam pada abad XIII mulai membentuk sistem pemerintahan dan hukum. Nilai-nilai Islam diterapkan dalam kehidupan bernegara dan bermasyarakat.</p>
-
-<p>Kerajaan-kerajaan Islam selanjutnya berkembang di berbagai wilayah Nusantara, menjadi cikal bakal peradaban Islam Indonesia.</p>
-
-<h3>5. Dampak Jangka Panjang</h3>
-
-<p>Perkembangan Islam pada abad XIII memberikan dampak besar bagi sejarah Indonesia. Islam menjadi agama mayoritas dan membentuk identitas budaya serta sosial masyarakat.</p>
-
-<p>Periode ini menandai berakhirnya fase awal Islamisasi dan dimulainya era kerajaan-kerajaan Islam di Nusantara.</p>
+<!-- ===== ABAD XII ===== -->
+<div id="abad12" class="section hidden">
+<h2>Abad XII</h2>
+<p>Islam meluas ke wilayah pedalaman.</p>
 </div>
 
-</div> <!-- end card -->
-</div> <!-- end content -->
+<!-- ===== ABAD XIII ===== -->
+<div id="abad13" class="section hidden">
+<h2>Abad XIII</h2>
+<p>Berdirinya kerajaan Islam awal di Nusantara.</p>
+</div>
 
+</div>
+</div>
+</div>
 <footer>
-<p>Aplikasi Edukasi Sejarah Perkembangan Islam di Indonesia Abad VII–XIII</p>
+<p>Aplikasi Edukasi Sejarah Islam Nusantara Abad VII–XIII</p>
 </footer>
 
 <script>
+const sections=document.querySelectorAll('.section');
+
 function show(id){
-  const sections = document.querySelectorAll('.card > div');
-  sections.forEach(sec => sec.classList.add('hidden'));
+  sections.forEach(s=>s.classList.add('hidden'));
   document.getElementById(id).classList.remove('hidden');
+  removeHighlight();
+}
+
+document.addEventListener("DOMContentLoaded",()=>show('home'));
+
+function liveSearch(){
+  const input=searchInput.value.toLowerCase();
+  searchResults.innerHTML='';
+  if(!input){searchResults.style.display='none';removeHighlight();return;}
+
+  sections.forEach(sec=>{
+    if(sec.innerText.toLowerCase().includes(input)){
+      const d=document.createElement('div');
+      d.textContent=sec.querySelector('h2')?.innerText || 'Beranda';
+      d.onclick=()=>{show(sec.id);highlight(input);searchResults.style.display='none';};
+      searchResults.appendChild(d);
+    }
+  });
+  searchResults.style.display=searchResults.innerHTML?'block':'none';
+}
+
+function highlight(word){
+  sections.forEach(sec=>{
+    sec.innerHTML=sec.innerHTML.replace(new RegExp(`(${word})`,'gi'),'<mark>$1</mark>');
+  });
+}
+function removeHighlight(){
+  sections.forEach(sec=>{
+    sec.innerHTML=sec.innerHTML.replace(/<\/?mark>/g,'');
+  });
 }
 </script>
 
