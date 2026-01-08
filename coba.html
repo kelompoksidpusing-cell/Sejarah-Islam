@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sejarah Perkembangan Islam di Indonesia abad 7 hingga 13</title>
+
+<style>
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* ===== RAPIN GAMBAR ===== */
+.gambar-wrapper {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.gambar-wrapper img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* ===== RAPIN SECTION ===== */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+
+}
+</style>
+
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f5f5f5;
+}
+
+/* ================= HEADER ================= */
+.top-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 30px;
+  background:#0b4fa3;
+  color:white;
+}
+
+.top-header h1{
+  font-size:20px;
+  margin:0;
+}
+
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.nav-box{
+  background:white;
+  color:#0b4fa3;
+  padding:8px 14px;
+  border-radius:8px;
+  font-size:13px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.nav-box:hover{
+  background:#e6eefb;
+}
+
+/* ================= SEARCH ================= */
+.search-box{
+  position:relative;
+}
+
+.search-box input{
+  padding:8px 12px;
+  border-radius:6px;
+  border:none;
+  font-size:14px;
+  width:220px;
+}
+
+#searchResults{
+  position:absolute;
+  top:40px;
+  right:0;
+  background:#ddd;
+  width:100%;
+  border-radius:6px;
+  display:none;
+  z-index:10;
+}
+
+#searchResults div{
+  padding:8px;
+  cursor:pointer;
+}
+
+#searchResults div:hover{
+  background:#eee;
+}
+
+/* ================= HERO ================= */
+.hero{
+  height:70vh;
+  background:url("GAMBARBG.JPEG") center/cover no-repeat;
+  display:flex;
+  align-items:flex-end;
+  padding:40px;
+  color:white;
+}
+
+.hero-overlay h2{
+  font-size:26px;
+  margin-bottom:6px;
+}
+
+.hero-overlay p{
+  font-size:14px;
+}
+
+/* ================= CONTENT ================= */
+.content{
+  padding:30px;
+}
+
+.card{
+  display:none;
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  animation:fade .4s ease;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(10px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* ================= GRID ================= */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:20px;
+}
+
+.era-card{
+  background:#fff;
+  padding:22px;
+  border-radius:14px;
+  box-shadow:0 8px 18px rgba(0,0,0,.08);
+  cursor:pointer;
+}
+
+.era-card:hover{
+  transform:translateY(-5px);
+}
+
+.era-card h3{
+  margin:0 0 6px;
+  color:#0b4fa3;
+}
+
+.era-card p{
+  font-size:14px;
+  color:#555;
+}
+
+.era-card span{
+  font-size:13px;
+  font-weight:bold;
+  color:#0b4fa3;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width:768px){
+  .top-header{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+  }
+
+  .search-box input{
+    width:100%;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    height:200px;
+    padding:16px;
+  }
+
+  .hero-overlay h2{
+    font-size:18px;
+  }
+
+  .hero-overlay p{
+    font-size:13px;
+  }
+}
+
+mark{
+  background:yellow;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="top-header">
+  <h1>Sejarah Perkembangan Islam di Indonesia abad 7 hingga 13</h1>
+
+  <div class="header-right">
+    <div class="nav-box" onclick="show('beranda')">🏠 Beranda</div>
+    <div class="nav-box" onclick="show('anggota')">👥 Anggota</div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Cari bab / kata..." oninput="liveSearch()">
+      <div id="searchResults"></div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-overlay">
+    <h2>Sejarah Perkembangan Islam di Indonesia abad 7 hingga 13</h2>
+    <p>Dari Abad VII hingga Abad XIII Masehi</p>
+  </div>
+</section>
+
+<!-- ================= CONTENT ================= -->
+<div class="content">
+
+<div id="beranda" class="card">
+  <h2>Menelusuri Awal Masuknya Islam di Indonesia</h2>
+  <p>
+    Bagaimana Islam pertama kali hadir di Nusantara?
+    Melalui perdagangan, budaya, dan dakwah damai, Islam mulai berkembang
+    di Indonesia sejak abad ke-7 hingga abad ke-12.
+  </p>
+
+  <div class="grid">
+    <div class="era-card" onclick="show('Abad VII')">
+  <h3>Abad VII</h3>
+  <p><Kategori Masuk Melalui Teori-Teori Yang Ada>></b>
+  <span>Baca →</span>
+  </div>
+
+  <div class="era-card" onclick="show('Abad VIII')">
+    <h3>Abad VIII</h3>
+    <p>Perkembangan Islam di Nusantara pada Abad VIII (700 – 800 M)</p>
+    <span>Baca →</span>
+  </div>
+    
+
+  <div class="era-card" onclick="show('abad9')">
+  <h3>Abad IX</h3>
+  <p>Perkembangan Islam Di Nusantara Pada Abad XII Masehi (800 – 900 M)</p>
+  <span>Baca →</span>
+    <h3>1. Kondisi Dunia Islam pada Abad IX</h3>
+    <b>Situasi Politik dan Peradaban Islam</b>
+    <p>Abad IX Masehi berada di bawah kekuasaan Dinasti Abbasiyah dengan pusat pemerintahan di Baghdad. Pada masa ini, dunia Islam mencapai masa keemasan awal dalam bidang:
+      -perdagangan internasional
+      -ilmu pengetahuan
+      -pelayaran
+      -administrasi pemerintahan
+      -Islam tidak hanya berkembang sebagai agama, tetapi juga sebagai jaringan ekonomi dan budaya global.</p>
+    <h3>2. Jalur Perdagangan Internasional Abad IX</h3>
+    <b>Perdagangan Sebagai Faktor Utama</b>
+    <p>Pada abad IX:
+      -Jalur perdagangan Samudra Hindia sangat aktif
+      -Pedagang Muslim dari Arab, Persia, dan India mendominasi perdagangan laut
+      -Nusantara menjadi wilayah transit wajib menuju Cina
+      -Islam menyebar bukan lewat penaklukan, tetapi lewat:</p>
+    <h3>3. Posisi Nusantara pada Abad IX</h3>
+    <b>Peranan Kerajaan Sriwijaya </b>
+    <p>Pada abad IX, Sriwijaya berada di puncak kekuasaan:
+        -menguasai Selat Malaka
+        -menjadi pusat perdagangan internasional
+        -menjadi tempat singgah pedagang Muslim
+      Sriwijaya BUKAN kerajaan Islam, tetapi:
+        -memberi ruang bagi komunitas Muslim asing
+        -menjamin keamanan perdagangan
+        -menjadi penghubung dunia Islam dan Asia Timur</p>
+    <h3>4. Bukti Sejarah Islam Abad IX (Bagian Paling Penting)</h3>
+    <b>A. Catatan Tertulis dari Dunia Islam</b>
+    <p>Beberapa geografer dan penulis Muslim abad IX mencatat wilayah Asia Tenggara, antara lain:
+        -Ibn Khordadbeh
+        -Al-Ya’qubi
+        -Sulaiman al-Tajir
+      Mereka menyebut wilayah:
+        -Zabag
+        -Sribuza
+      ➡️ Ini diyakini sebagai Sriwijaya.
+        📌 Artinya:
+        -Nusantara sudah dikenal luas di dunia Islam
+        -Ada kontak langsung dan rutin</p>
+      <b>B. Artefak Perdagangan Islam (BUKTI NYATA)</b>
+      <P>Salah satu bukti paling kuat Islam abad IX adalah koin Dirham Abbasiyah yang ditemukan di Asia Tenggara </P>
+    <h3>5. Keberadaan Komunitas Muslim di Nusantara</h3>
+      <p>Pada abad IX:
+        -Muslim belum menjadi penduduk mayoritas
+        -Komunitas Muslim terdiri dari:
+        -pedagang Arab
+        -pedagang Persia
+        -pedagang India Muslim
+      Mereka:
+      -tinggal sementara di pelabuhan
+      -menikah dengan penduduk lokal (dalam jangka panjang)
+      -membentuk komunitas kecil
+    ❗ Belum ada:
+      -kerajaan Islam
+      -masjid monumental
+     -struktur politik Islam lokal
+    Ini penting agar tidak terjadi kesalahan sejarah.</p>
+    <H3>6. Hubungan Nusantara – Cina – Dunia Islam</H3>
+      <P>IX adalah masa aktif hubungan:
+         -dunia Islam = Cina Dinasti Tang
+         -Nusantara sebagai penghubung utama
+        Catatan Cina menyebut:
+        -adanya pedagang Arab Muslim
+        -keberadaan komunitas asing di pelabuhan Asia Tenggara</P>
+   <H3> 7. Cara Penyebaran Islam Abad IX</H3>
+    <p>Islam menyebar melalui:
+        -perdagangan
+        -interaksi sosial
+        -akhlak pedagang Muslim
+        -hubungan ekonomi jangka panjang
+      Tidak ada:
+      ❌ penaklukan militer
+      ❌ pemaksaan agama
+      Islam mulai dikenal sebagai:
+        -agama pedagang
+        -agama dengan etika kuat
+        -agama yang mudah beradaptasi</p>
+    <h3>8. Kesimpulan Abad IX</h3>
+      <p>📌 Abad IX Masehi merupakan fase penguatan penyebaran Islam:
+          -Hubungan dunia Islam–Nusantara tercatat jelas
+          -Menjadi fondasi penting bagi Islamisasi abad X–XIII
+         Namun: -Islam semakin dikenal luas di Nusantara
+          -Komunitas Muslim asing mulai stabil
+          -Islam belum menjadi kekuatan politik
+          -Belum ada kerajaan Islam lokal</p>
+ </div>
+
+  <div class="era-card" onclick="show('Abad X')">
+  <h3>Abad X</h3>
+  <p>Perkembangan Islam di Nusantara pada Abad X (900–1000 M)</p>
+  <span>Baca →</span>
+  <h3>1. Kondisi Dunia Islam Abad X</h3>
+    <p>-Dunia Islam berada di bawah kekuasaan Dinasti Abbasiyah, Baghdad sebagai pusatnya.
+       -Abad X disebut juga sebagai masa “Zaman Keemasan Islam” awal.
+       -Bidang yang berkembang pesat:Ilmu pengetahuan (matematika, astronomi, kedokteran),Perdagangan internasional,Pelayaran dan navigasi,Administrasi dan budaya.
+  <h3>2. Jalur Perdagangan dan Peran Nusantara</h3>
+    <p>-Nusantara menjadi jalur penting Samudra Hindia.
+       -Pedagang Muslim dari Arab, Persia, dan India berinteraksi langsung dengan penduduk lokal.
+       -Pelabuhan strategis:
+       a.Barus (Sumatra)-rempah dan kapur barus
+       b.Palembang & Jambi- pusat perdagangan maritim
+       c.Pantai utara Jawa – persinggahan kapal dagang</p>
+  <h3>3. Bukti Awal Komunitas Muslim di Nusantara</h3>
+    <p>a.Pedagang Muslim membentuk komunitas kecil di pelabuhan.
+      b.Beberapa bukti sejarah:
+      -Koin Dirham Abbasiyah & Umayyah ditemukan di Sumatra dan Jawa.
+      -Catatan Cina (Dinasti Song) menyebut pedagang Arab & Persia di Nusantara.
+      -Prasasti/kode dagang lokal yang menggunakan penanggalan Islam mulai muncul (walaupun masih jarang).</p>
+  <h3>4. Perkembangan Kerajaan Sriwijaya Abad X</h3>
+   <p>-Sriwijaya tetap menjadi penguasa jalur perdagangan maritim.
+      -Mulai menerapkan diplomasi dengan pedagang Muslim, memberi izin berdagang dan menetap sementara.
+      -Sriwijaya:Menjadi pusat akulturasi budaya (Hindu-Buddha + Muslim),Mendukung pengiriman biksu dan pelajar ke India dan Cina (Sang Hyang Kamal dan catatan Cina)</p>
+  <h3>5. Penyebaran Islam di Abad X</h3>
+  <p>-Islam mulai dikenal secara lokal, terutama di pesisir.
+     -Ciri penyebaran:
+     a.Damai, lewat perdagangan dan hubungan sosial
+     b.Komunitas kecil: pedagang Muslim + keluarga lokal
+     c.Belum ada kerajaan Islam lokal, tapi fondasi mulai terbentuk</p>
+  <h3>6. Bukti Interaksi dengan Cina
+    <p>-Abad X = hubungan Nusantara dengan Cina (Dinasti Song) semakin intens.
+       -Catatan Cina menyebut:
+       a.Pedagang Muslim di pelabuhan Nusantara
+       b.Barang dagangan: rempah, emas, cendana, kain sutra
+       c.Memungkinkan transfer budaya Islam awal</p>
+  <h3>7. Kondisi Masyarakat Nusantara Abad X
+    <p>-Mayoritas masih Hindu-Buddha + kepercayaan lokal.
+       -Islam dikenal di pesisir, belum mendominasi.
+       -Akulturasi mulai terjadi, misal:
+       a.Nama pedagang/anak pelabuhan memakai nama Arab
+       b.Teknik pelayaran dan kapal mengikuti model Arab-Persia</p>
+  <h3>8. Kesimpulan Abad X
+    <p>-Islam mulai dikenal di pesisir Nusantara, khususnya pelabuhan perdagangan.
+       -Belum ada kerajaan Islam, tapi fondasi komunitas Muslim sudah terbentuk.
+       -Hubungan ekonomi dan sosial dengan dunia Islam semakin erat.
+       -Abad X = masa transisi dari Islam sebagai agama pedagang ke Islam sebagai kekuatan sosial-budaya lokal.</p>
+  </div>
+
+  <div class="era-card" onclick="show('Abad XI')">
+  <h3>Abad XI</h3>
+  <p>KPerkembangan Islam pada Abad XI (Abad ke-11 Masehi)</p>
+  <span>Baca →</span>
+  <p>Abad XI Masehi (1001–1100 M) merupakan periode penting dalam sejarah Islam, baik di dunia Islam secara umum maupun dalam kaitannya dengan perkembangan Islam di Asia Tenggara dan Nusantara. Pada abad ini, Islam tidak hanya berkembang sebagai agama, tetapi juga sebagai peradaban besar yang memengaruhi sistem pemerintahan, perdagangan, ilmu pengetahuan, dan budaya.
+     Berbeda dengan masa sebelumnya yang lebih berfokus pada ekspansi dan konsolidasi kekuasaan, abad XI ditandai oleh perubahan struktur politik, kebangkitan pusat-pusat kekuasaan baru, serta semakin kuatnya jaringan perdagangan internasional yang berperan besar dalam penyebaran Islam ke wilayah Nusantara.</p>
+  <b>1. Kondisi Dunia Islam pada Abad XI
+    a. Kemunduran Kekuasaan Abbasiyah</b>
+  <p>Pada abad XI, Dinasti Abbasiyah yang berpusat di Baghdad masih diakui sebagai pemimpin simbolis umat Islam, namun kekuasaan politiknya telah melemah.
+      -Khalifah Abbasiyah lebih berperan sebagai pemimpin agama daripada penguasa politik nyata.
+      -Kekuasaan administratif dan militer diambil alih oleh dinasti-dinasti lain, terutama Dinasti Seljuk.
+      -Meskipun lemah secara politik, Baghdad tetap menjadi pusat ilmu pengetahuan dan kebudayaan Islam.
+    👉 Kondisi ini menyebabkan dunia Islam menjadi terfragmentasi, tetapi secara budaya dan keagamaan tetap terhubung kuat.</p>
+  <b>Bangkitnya Dinasti Seljuk</b>
+   <p>Dinasti Seljuk (bangsa Turki Muslim) menjadi kekuatan besar pada abad XI.
+      -Seljuk menguasai wilayah Persia, Irak, hingga Asia Kecil.
+      -Mereka mendukung kekhalifahan Abbasiyah dan berperan sebagai pelindung politik dan militer.
+      -Pada masa ini, madrasah-madrasah berkembang pesat, termasuk Madrasah Nizamiyah.
+  📌 Peran Seljuk sangat penting dalam:
+  -Menegakkan kembali Sunni Islam
+  -Mengembangkan pendidikan Islam formal
+  -Menyebarkan stabilitas di jalur perdagangan</p>
+  <h3>2. Perkembangan Ilmu Pengetahuan dan Kebudayaan Islam</h3>
+   <p>Abad XI dikenal sebagai masa kejayaan intelektual Islam.
+  <b>a. Bidang Pendidikan
+  <p>-Sistem madrasah berkembang luas.
+    -Kurikulum mencakup:Ilmu agama (fikih, tafsir, hadis),Ilmu rasional (matematika, astronomi, filsafat, kedokteran)</p>
+  <b>b. Tokoh Penting Abad XI</b>
+  <p>Beberapa tokoh besar abad XI antara lain:
+  a.Imam Al-Ghazali (1058–1111 M)
+   -Ulama besar dalam bidang teologi dan tasawuf
+   -Karyanya Ihya’ Ulumuddin sangat berpengaruh
+   -Berhasil mengintegrasikan syariat dan tasawuf
+   b.Ibnu Sina (Avicenna)(pengaruhnya masih kuat hingga abad XI)
+   -Tokoh kedokteran dan filsafat
+   -Karyanya Al-Qanun fi al-Tibb digunakan di Eropa berabad-abad
+📚 Perkembangan ilmu ini menjadikan dunia Islam sebagai pusat peradaban global.</p>
+    <h3>3. Perdagangan Internasional dan Jalur Penyebaran Islam</h33>
+      <b>a. Jalur Perdagangan Samudra Hindia</b>
+      <p>Abad XI merupakan masa sangat aktifnya perdagangan internasional:
+      Jalur utama:
+        -Timur Tengah → India → Asia Tenggara → Cina
+      Komoditas utama:
+      -Rempah-rempah
+      -Emas
+      -Kain
+      -Keramik
+      -Pedagang Muslim:Berasal dari Arab, Persia, dan India,Tidak hanya berdagang, tetapi juga menyebarkan Islam melalui interaksi sosial</p>
+      <b>b. Peran Pedagang Muslim</b>
+      <p>Pedagang Muslim memiliki ciri khas:
+        -Jujur dalam berdagang
+        -Menjalin hubungan pernikahan dengan penduduk lokal
+        -Mendirikan komunitas Muslim di pelabuhan-pelabuhan
+👉 Hal ini membuat Islam diterima secara damai dan bertahap, tanpa paksaan.</p>
+    <h3>4. Perkembangan Islam di Nusantara pada Abad XI</h3>
+    <b>a. Awal Penguatan Komunitas Muslim</b>
+    <p>Pada abad XI:
+      -Islam belum menjadi agama mayoritas di Nusantara
+      -Namun, komunitas Muslim sudah mulai menetap secara permanen
+      -Islam berkembang terutama di:Pesisir Sumatra,Pantai utara Jawa,Wilayah perdagangan strategis</p>
+    <b>b.Bukti Sejarah</b>
+    <p>Beberapa bukti penting keberadaan Islam di Nusantara abad XI:
+      -Batu nisan Fatimah binti Maimun (1082 M) di Leran, Gresik:Menjadi bukti arkeologis penting,Menunjukkan keberadaan komunitas Muslim di Jawa Timur>
+ <div class="gambar-wrapper">
+  <img src="tugas-islam/abad8-4.jpg.jpg" class="gambar" alt="Gambar Sejarah Abad VIII">
+</div>
+      -Catatan pedagang dan pelaut asing
+ <div class="gambar-wrapper">
+  <img src="tugas-islam/abad10-4c.png" class="gambar" alt="Gambar Sejarah Abad VIII">
+</div>
+      -Jejak budaya Islam dalam tradisi lokal
+ <div class="gambar-wrapper">
+  <img src="tugas-islam/abad10-4d.jpg.png" class="gambar" alt="Gambar Sejarah Abad VIII">
+</div>
+📌 Bukti ini memperkuat bahwa Islam telah berakar sebelum munculnya kerajaan Islam besar.</p>
+    <h3>5. Metode Penyebaran Islam di Nusantara</h3>
+    <p>Islam pada abad XI berkembang melalui beberapa cara utama:</p>   
+  <div class="gambar-wrapper">
+  <img src="tugas-islam/abad10-5.jpg.png" class="gambar" alt="Gambar Sejarah Abad VIII">
+</div> 
+    <b>a. Perdagangan</b>
+    <p>-Sarana utama penyebaran
+       -Pedagang menjadi da'i tidak resmi</p>
+    <b>b. Sosial dan Budaya</b>
+    <p>-Pernikahan campuran
+       -Adaptasi dengan budaya lokal
+       -Penyebaran nilai Islam tanpa menghilangkan tradisi setempat</p>
+    <b>c. Tasawuf</b>
+    <p>-Ajaran tasawuf mudah diterima masyarakat
+       -Menekankan akhlak, spiritualitas, dan keteladanan
+  <h3>6. Dampak Abad XI terhadap Perkembangan Islam Selanjutnya</h3>
+  <p>Abad XI menjadi fondasi penting bagi perkembangan Islam di Nusantara pada abad-abad berikutnya.
+    Dampaknya antara lain:
+    -Terbentuknya komunitas Muslim yang stabil
+    -Islam mulai diterima oleh elite lokal
+    -Membuka jalan bagi lahirnya:Kerajaan Samudra Pasai (abad XIII),Kerajaan Islam di Jawa dan wilayah lain
+  <h3>Penutup</h3>
+  Abad XI merupakan masa transisi dan penguatan dalam sejarah Islam. Di tingkat global, dunia Islam mengalami perkembangan ilmu pengetahuan dan kebudayaan yang luar biasa. Sementara itu, di Nusantara, Islam mulai mengakar secara sosial dan kultural, terutama melalui perdagangan dan interaksi damai.
+  Perkembangan pada abad ini menjadi dasar kuat bagi Islamisasi Nusantara di abad-abad selanjutnya.
+</div>
+
+    <div class="era-card" onclick="show('Abad XII')">
+      <h3>Abad XII</h3>
+      <p>Perkembangan Islam di Indonesia pada Abad XII (Abad ke-12 Masehi)</p>
+      <span>Baca →</span>
+    <b>A. Pendahuluan</b>
+    <p>Abad XII Masehi (1101–1200 M) merupakan fase awal dan fundamental dalam sejarah perkembangan Islam di Indonesia. Pada periode ini, Islam belum berkembang dalam bentuk kekuasaan politik atau kerajaan, tetapi mulai dikenal dan diterima secara bertahap oleh masyarakat Nusantara. Abad XII dapat dipahami sebagai masa perintisan, yaitu tahap ketika Islam mulai berakar melalui kontak sosial, ekonomi, dan budaya, khususnya di wilayah pesisir.
+      Perkembangan Islam pada abad XII tidak dapat dilepaskan dari dinamika perdagangan internasional yang menghubungkan Timur Tengah, India, dan Asia Tenggara. Nusantara, sebagai wilayah strategis dan kaya akan hasil bumi, menjadi bagian penting dari jaringan perdagangan global. Dalam konteks inilah Islam mulai masuk dan berkembang di Indonesia secara damai dan berkelanjutan.</p>
+    <b>B. Kondisi Nusantara pada Abad XII</b>
+    <p>Pada abad XII, Nusantara masih didominasi oleh kerajaan-kerajaan bercorak Hindu-Buddha, seperti Sriwijaya dan kerajaan-kerajaan lokal lainnya. Kehidupan masyarakat Nusantara bersifat terbuka terhadap pengaruh luar, terutama di daerah pesisir yang menjadi pusat aktivitas perdagangan dan pelayaran.
+      Pelabuhan-pelabuhan di Sumatra, Jawa, dan wilayah pesisir lainnya telah berkembang sebagai tempat pertemuan berbagai bangsa dan budaya. Kondisi ini menciptakan ruang interaksi yang intens antara masyarakat lokal dengan para pedagang asing, termasuk pedagang Muslim. Keterbukaan sosial masyarakat Nusantara menjadi faktor penting yang mendukung masuknya pengaruh Islam pada abad XII.
+    <b>C. Jalur Masuknya Islam ke Indonesia pada Abad XII</b>
+    <p>Masuknya Islam ke Indonesia pada abad XII berlangsung terutama melalui jalur perdagangan laut. Jalur Samudra Hindia menjadi penghubung utama antara dunia Islam di Timur Tengah dan India dengan wilayah Asia Tenggara.
+      Para pedagang Muslim dari Arab, Persia, dan India, khususnya dari wilayah Gujarat, singgah di pelabuhan-pelabuhan Nusantara dalam aktivitas perdagangan. Dalam proses ini, terjadi interaksi sosial yang berkelanjutan antara pedagang Muslim dan masyarakat setempat. Islam diperkenalkan bukan melalui penaklukan, melainkan melalui hubungan dagang, pergaulan sosial, dan kehidupan sehari-hari.
+    <b>D. Peran Pedagang Muslim dalam Perkembangan Islam pada Abad XII</b>
+    <p>Pedagang Muslim memegang peranan sentral dalam perkembangan Islam di Indonesia pada abad XII. Mereka tidak hanya berfungsi sebagai pelaku ekonomi, tetapi juga sebagai pembawa nilai-nilai keislaman.
+      Etika perdagangan yang menjunjung tinggi kejujuran, keadilan, dan tanggung jawab sosial memberikan kesan positif bagi masyarakat lokal. Sikap ini membuat Islam dipandang sebagai ajaran yang membawa nilai moral dan etika yang baik. Selain itu, banyak pedagang Muslim yang menetap sementara atau secara permanen di Nusantara dan membentuk komunitas Muslim awal di kawasan pesisir.
+      Melalui pernikahan dengan penduduk lokal dan hubungan sosial yang harmonis, Islam mulai menyebar secara perlahan dan diterima sebagai bagian dari kehidupan masyarakat setempat.
+    <b>E. Peran Ulama dan Tasawuf dalam Islamisasi Awal Nusantara</b>
+    <p>Selain pedagang, ulama dan tokoh tasawuf turut berperan dalam penyebaran Islam di Indonesia pada abad XII. Pendekatan tasawuf yang menekankan aspek spiritual, akhlak, dan kedamaian dinilai sangat sesuai dengan karakter masyarakat Nusantara yang sebelumnya dipengaruhi oleh tradisi Hindu-Buddha dan kepercayaan lokal.
+      Para tokoh sufi menyampaikan ajaran Islam secara persuasif dan adaptif, dengan mengakomodasi unsur-unsur budaya lokal tanpa menghilangkan esensi ajaran Islam. Pendekatan ini memudahkan masyarakat untuk menerima Islam tanpa harus mengalami konflik budaya atau sosial.
+    <b>F. Bentuk Perkembangan Islam di Indonesia pada Abad XI</b>
+    <p>Pada abad XII, Islam di Indonesia berkembang dalam bentuk komunitas-komunitas kecil yang tersebar di wilayah pesisir. Islam belum menjadi agama mayoritas, tetapi telah dikenal dan dianut oleh sebagian masyarakat, terutama di kalangan pedagang dan penduduk pelabuhan.
+      Keberadaan Islam pada masa ini ditunjukkan melalui bukti-bukti awal, seperti peninggalan arkeologis berupa nisan bercorak Islam serta catatan perjalanan para musafir asing. Meskipun bukti tersebut masih terbatas, hal ini menunjukkan bahwa Islam telah hadir dan berkembang di Nusantara sebelum abad XIII.
+    <b>G. Kedudukan Abad XII Sejarah Islam Indonesia</b>
+    <p>Abad XII memiliki kedudukan yang sangat penting dalam sejarah Islam Indonesia karena menjadi fase peletakan dasar bagi perkembangan Islam pada masa selanjutnya. Jaringan perdagangan, komunitas Muslim awal, serta metode dakwah yang damai dan kultural yang berkembang pada abad ini menjadi fondasi utama bagi munculnya kerajaan-kerajaan Islam pada abad XIII.
+      Tanpa proses awal yang berlangsung pada abad XII, perkembangan Islam yang lebih pesat dan terorganisasi pada abad-abad berikutnya tidak akan terjadi secara optimal.
+    <b>H.Penutup</b>
+    <p>Perkembangan Islam di Indonesia pada abad XII merupakan tahap awal yang bersifat fundamental dan menentukan. Melalui jalur perdagangan, peran pedagang Muslim, ulama, serta pendekatan tasawuf yang adaptif, Islam mulai dikenal dan diterima oleh masyarakat Nusantara secara damai.
+      Abad XII bukanlah masa kejayaan politik Islam di Indonesia, melainkan masa perintisan dan penanaman nilai-nilai Islam yang menjadi dasar bagi perkembangan Islam yang lebih luas dan kuat pada abad-abad berikutnya.</p>
+    </div>
+
+        <div class="era-card" onclick="show('Abad XIII')">
+      <h3>Abad XIII</h3>
+      <p>Perkembangan Islam di Indonesia pada Abad XIII (Abad ke-13 Masehi)</p>
+      <span>Baca →</span>
+    <b>A. Pendahuluan Umum</b>
+    <p>Abad XIII Masehi (1201–1300 M) merupakan fase awal yang sangat penting dalam sejarah perkembangan Islam di Indonesia. Pada abad inilah Islam mulai berkembang secara lebih jelas dan terorganisasi di wilayah Nusantara, khususnya di daerah-daerah pesisir yang menjadi pusat perdagangan internasional. Berbeda dengan abad-abad sebelumnya yang masih bersifat tahap perkenalan dan kontak awal, abad XIII menandai munculnya komunitas Muslim yang menetap serta terbentuknya kekuasaan Islam pertama di Indonesia.
+      Perkembangan Islam di Indonesia pada abad XIII tidak terjadi secara tiba-tiba, melainkan merupakan hasil dari proses panjang interaksi perdagangan, sosial, dan budaya. Oleh karena itu, abad XIII dapat dipandang sebagai masa transisi penting dari tahap masuknya Islam menuju tahap perkembangan dan penguatan Islam di Nusantara.</p>
+    <b>B. Latar Belakang Masuknya Islam ke Indonesia pada Abad XIII
+      <p>Pada abad XIII, jalur perdagangan Samudra Hindia telah berkembang pesat dan menjadi penghubung utama antara Timur Tengah, India, dan Asia Tenggara. Nusantara, yang kaya akan hasil bumi seperti rempah-rempah, menjadi tujuan penting para pedagang asing, termasuk pedagang Muslim
+        Kondisi ini menciptakan ruang interaksi yang intens antara pedagang Muslim dan masyarakat lokal. Islam diperkenalkan melalui hubungan dagang, perkawinan, serta kehidupan sosial sehari-hari. Proses ini berlangsung secara damai tanpa paksaan, sehingga Islam dapat diterima secara perlahan oleh masyarakat Nusantara.
+    <b>C. Jalur Penyebaran Islam pada Abad XIII</b>
+    <p>Pada abad XIII, penyebaran Islam di Indonesia berlangsung melalui beberapa jalur utama, yaitu:
+      1.Jalur perdagangan laut melalui Samudra Hindia
+      2.Jalur India (khususnya Gujarat dan India Selatan)
+      3.Jalur Persia dan Arab
+    Di antara jalur tersebut, jalur Gujarat memiliki peran yang sangat besar. Hal ini terlihat dari kesamaan mazhab fikih yang berkembang di Indonesia, yaitu mazhab Syafi’i, serta bentuk-bentuk budaya Islam awal yang menunjukkan pengaruh India Muslim.</p>
+    <b>D. Peran Pedagang Muslim Dalam Perkembangan Islam Abad XIII</b>
+    <p>Pedagang Muslim merupakan aktor utama dalam perkembangan Islam di Indonesia pada abad XIII. Mereka tidak hanya melakukan aktivitas ekonomi, tetapi juga menjadi teladan dalam perilaku dan etika kehidupan.
+      Ciri utama peran pedagang Muslim antara lain:
+      1.Menunjukkan etika dagang yang jujur dan adil
+      2.Menjalin hubungan sosial yang baik dengan masyarakat lokal
+      3.Menyebarkan Islam melalui keteladanan, bukan paksaan
+    Melalui peran ini, Islam diterima sebagai ajaran yang selaras dengan nilai-nilai lokal, sehingga proses Islamisasi berlangsung secara damai.</p>
+    <b>E. Peran Ulama dan Tasawuf dalam Islamisasi Nusantara Abad XIII</b>
+    <p>Selain pedagang, ulama dan tokoh tasawuf memiliki peran penting dalam perkembangan Islam di Indonesia pada abad XIII. Pendekatan tasawuf yang menekankan akhlak, spiritualitas, dan toleransi budaya sangat sesuai dengan karakter masyarakat Nusantara.
+      Para sufi menyebarkan Islam dengan cara mengakomodasi tradisi lokal dan memberikan makna baru yang Islami. Pendekatan ini memudahkan masyarakat untuk menerima Islam tanpa harus meninggalkan seluruh tradisi yang telah ada sebelumnya.</p>
+    <b>F. Munculnya Kerajaan Islam Pertama di Indonesia</b>
+    <p>Salah satu bukti penting perkembangan Islam di Indonesia pada abad XIII adalah berdirinya Kerajaan Samudra Pasai di Aceh. Kerajaan ini sering dianggap sebagai kerajaan Islam pertama di Indonesia.
+      Bukti keberadaan Samudra Pasai antara lain:
+      -Batu nisan Sultan Malik al-Saleh bertahun 1297 
+      -Catatan perjalanan Marco Polo yang menyebutkan adanya komunitas Muslim di Sumatra
+      Keberadaan kerajaan ini menunjukkan bahwa Islam pada abad XIII tidak hanya dianut oleh individu, tetapi telah berkembang menjadi kekuatan sosial dan politik.</p>
+    <b>G. Kehidupan Sosial dan Budaya Masyarakat Muslim Nusantara</b>
+    <p>Perkembangan Islam pada abad XIII membawa perubahan dalam kehidupan sosial dan budaya masyarakat Nusantara. Nilai-nilai Islam mulai memengaruhi sistem kepercayaan, norma sosial, dan kehidupan sehari-hari.
+      Namun, proses ini berlangsung melalui akulturasi budaya. Unsur-unsur Islam berpadu dengan tradisi lokal, sehingga membentuk corak Islam Nusantara yang khas dan beragam.</p>
+    <b>H. Kedudukan Abad XIII dalam Sejarah Islam Indonesia</b>
+    Abad XIII menempati posisi yang sangat penting dalam sejarah Islam Indonesia. Pada masa inilah Islam mulai berakar kuat dan menunjukkan keberadaannya secara nyata di Nusantara.
+    Perkembangan yang terjadi pada abad XIII menjadi dasar bagi penyebaran Islam yang lebih luas pada abad-abad berikutnya, khususnya pada abad XIV dan XV ketika Islam berkembang pesat di Jawa dan wilayah Indonesia lainnya.</p>
+    <b>Penutup</b>
+    <p>Perkembangan Islam di Indonesia pada abad XIII merupakan fase awal yang menentukan dalam sejarah Islam Nusantara. Melalui jalur perdagangan, peran pedagang Muslim, ulama, dan pendekatan tasawuf, Islam berkembang secara damai dan bertahap.
+      Abad XIII menjadi tonggak penting karena pada masa inilah Islam mulai membentuk fondasi sosial, budaya, dan keagamaan yang kelak berkembang menjadi ciri khas Islam di Indonesia.
+
+
+    </div>
+  </div>
+</div>
+
+<div id="Abad VII" class="card">
+  <h2>Abad VII</h2>
+  <p>KATEGORI MASUK MELALUI TEORI-TEORI YANG ADA.</p>
+  <h3>Teori Gujarat 
+    <p>Teori Gujarat adalah Teori yang paling populer dan menyebut islam dibawa oleh pedagang dari gujarat india. Di samping melakukan perdagangan, mereka dipercaya melakukan penyebaran agama islam khususnya di kawasan selat malaka. Berdasarkan teori ini islam masuk ke nusantara sejak abad ke 13 Masehi. Teori ini pertama kali diperkenalkan oleh Pijnapel(seorang ilmuwan Belanda melakukan dan mendapatkan dukungan dari Christian Snouck Hurgronje), ada beberapa bukti penemuan yang membenarkan teori ini, penemuan ini sudah dibahas oleh Moquette seorang ilmuwan yang ikut mengembangkan teori ini pada tahun 1912. Adapun penemuan relevan dengan teori ini di antaranya pernyataan dari Marcopolo, sosok yang berasal dari venesia italia pernah menyampaikan ada penemuan nisan sultan malik assoleh di Pasai Sumatera Utara, bukti penemuan berikutnya yaitu adanya inkripsi tertua yang menguraikan tentang hubungan sumatera dengan gujarat.</p>
+    <div class="gambar-wrapper">
+  <img src="tugas-islam/abad7.jpeg" class="gambar" alt="Gambar Sejarah Abad VIII">
+</div>
+
+      <p>Para pedagang di Gujarat lebih banyak menganut mazhab hanafi, sebaliknya masyarakat pasai menganut mazhab syafi’i bahkan ada yang menyangkal lagi bahwa kala islam datang ke pasai mayoritas gujarat masih beragama hindu </p>
+    <h3>Teori Persia</h3>
+      <p>Teori ini menganggap bahwa perkembangan islam terjadi sebagai dampak dari perdagangan yang dilakukan pedagang persia. Hal ini karena indonesia merupakan kepulauan yang potensial sebagai tujuan berdagang, sumber-sumber terkait teori ini mengungkapkan bahwa perkembangan islam dimulai antara 7-13 M. Adapun pencetus teori masuknya islam ke indonesia adalah profesor umar amir husein dan profesor husein jayadiningrat. Menurut pendapat mereka, islam mendarat pertama kali di sumatera, terdapat beberapa bukti pendukung yang ditemukan dalam manuskrip maupun budaya masyarakat. Adapun beberpa bukti yang dimaksud yaitu:</p>
+      <p>-PERTAMA: Perayaan dan tradisi masyarakat islam persia mempunyai sejumlah perayaan budaya yang tidak jauh beda dengan perayaan di indonesia. contohnya upacara tabuik di bengkulu yang biasanya di persia menjadi hari untuk mengenang husein bin ali yaitu cucu nabi muhammad SAW. juga acara maulid lomponga di cikoang yang serupa dengan hari asuro di persia. kemudian bentuk batu nisan. teori masuknya islam ke indonesia dan pendukungnya ini menyinggung tentang batu nisan milik malikus soleh yang mirip dengan batu nisan maulana malik ibrahim.</p>
+ <div class="gambar-wrapper">
+  <img src="tugas-islam/abad7-2.jpg" class="gambar" alt="Gambar Sejarah Abad VIII">
+</div>
+      <p>-KEDUA: kosakata yang mirip, selain itu pencetus teori ini menunjukkan bahwa ada kemiripan dari segi kosakata antara bahasa persia dan bahasa melayu</p>
+    <h3>Teori Cina</h3>
+      <p>Teori ini dimulai pada dinasti Teng 618-905 M, bermula dari kanton daerah yang penduduknya mayoritas beragama islam. Daerah ini berada di bagian cina selatan. pendapat lain yang mengatakan bahwa dulu islam dibawa oleh panglima Muslim bernama sa’ad bin Abi waqash yang berdakwah pada masa khalifah yang berdakwah pada masa khalifah utsman bin affan.Teori ini dikembangkan oleh sumanto Al Qurthubi ia menjelaskan bahwa penyebaran agama islam yang dilakukan cina dilakukan melalui perkawinan terhadap warga lokal.Hal ini dilakukan oleh pendatang cina saat menetap lama di Indonesia dalam mendukung yang dicetuskannya sumanto telah mengumpulkan beberapa bukti yang menunjukan bahwa islam dibawa oleh para pedagang cina beberapa bukti adalah sebagai berikut yang pertama adalah komunitas cina. Dalam Islam di cina Jean A.berlie menjelaskan bahwa di palembang terdapat suatu komunitas Muslim cina pada 879 M.Komunitas yang berisi orang asli namun beragam Islam ini konon merupakan warga cina yang bermigrasi Kanton ke Asia tenggara.Kemudian raja islam keturunan Tiongkok di Jawa ada sebuah kerajaan Islam yang dipimpin oleh seorangraja keturunan Tiongkok ia adalah raden fatah yang memimpin kerajaan demak ia merupakan raja pertama.Kemudian kemiripan penduduk adalah sebuah golongan dari Tiongkok yang mendiami bagian pesisir Jawa Timur mereka adalah orang orang tang yang berasal dari Kuangtung guangzo dan berbagai daerah di Tiongkok lainnya yang membuat menjadi bukti teori ini adalah karena penduduk ini kebanykan memeluk agama islam teori ini mempunyai sejumlah bukti yang mendukung mengenai penyebaran agama Islam oleh pendatang Cina serta daerah-daerah mana saja yang menjadi tujuan penyiaran agama beberapa peneliti juga sudah membukukan penelitiannya.</p>
+      </h3>
+    </div>
+</div>
+
+
+<div id="Abad VIII" class="card">
+  <h2>Abad VIII</h2>
+  <p>Perkembangan Islam di Nusantara pada Abad VIII (700 – 800 M).</p>
+</div>
+<h3>1. Kondisi Dunia Islam Pada Abad VIII</h3>
+     <div class="gambar-wrapper">
+  <img src="tugas-islam/abad7.jpeg" class="gambar" alt="Gambar Sejarah Abad VIII">
+</div>
+      <p>Pada Abad VIII:</p>
+      <p>-Dunia Islam diperintahkan oleh Dinasti Ummayah (hingga 750M) dan kemudian Abbasiyah</p>
+      <p>-Islam berkembang cepat secara Politik, Ekonomi, dan Budaya</p>
+      <p>-Jalur perdagangan darat dan laut makin luas dan teratur</p>
+    <h3>2. Jalur Perdagangan Nusantara</h3>
+      <p>Islam masuk ke Nusantara bukan lewat pasukan tetapi lewat jalur perdagangan laut:</p>
+      <p>-Pedagang Muslim dari Arab, Persia, dan Gujarat singgah di pelabuhan Nusantara</p>
+      <p>-Nusantara menjadi persinggahan strategis karena letaknya di jalur penting antara India-Cina.</p>
+      <P>Pelabuhan yang ramai pada abad VIII</P>
+      <P>-Barus (Sumatra) — terkenal sebagai pusat kapur barus.</P>
+      <p>-Pesisi pantai utara Jawa & Kalimantan — tempat persinggahan kapal dagang.</p>
+    <h3>3. Peranan Kerajaan Sriwijaya</h3>
+      <p>Kerajaan Sriwijaya (Sumatra) pada abad VIII merupakan:</p>
+      <p>-Kerajaan maritim kuat yang menguasai jalur perdagangan Asia Tenggara.</p>
+      <p>Bersikap terbuka terhadap pedagang asing termasuk Muslim.</p>
+      <p>Akibatnya:</p>
+      <p>Banyak pedagang Muslim bermukim sementara dan membentuk komunitas Muslim awal di pesisir Nusantara.</p>
+     <h3>4. Bukti Awal Keberadaan Islam Abad VIII</h3>
+      <div class="gambar-wrapper">
+  <img src="tugas-islam/abad8-1.jpg" class="gambar" alt="Gambar Sejarah Abad VIII">
+</div>
+  
+      <p>a. Catatan Sejarawan Arab</p>
+      <P>Istilah seperti Zabag atau Sribuza dalam catatan Arab diyakini merujuk kepada Sriwijaya, menunjukkan hubungan Nusantara-dunia Islam.</P>
+      <p>B. Komunitas Muslim Asing</p>
+      <p>Pedagang Muslim membentuk desa/komunitas kecil di pelabuhan perdagangan.</p>
+      <p>C.Jejak Hubungan Dengan Cina</p>
+      <p>Perdagangan Islam dengan Cina juga melewati jalur Nusantara, sehingga budaya Islam makin dikenal luas.</p>
+    <h3>5. Cara Penyebaran Islam di Abad VIII</h3>
+     <div class="gambar-wrapper">
+  <img src="tugas-islam/abad8-5.jpg.webp" class="gambar" alt="Gambar Sejarah Abad VIII">
+</div>
+      <p>Penyebaran Islam pada abad ini bersifat:
+        ✔️ Damai dan bertahap
+        ✔️ Melalui interaksi sosial & perdagangan
+        ✔️ Tidak ada penaklukan politik</p>
+    <h3>6. Kondisi Masyarakat Nusantara Abad VIII</h3>
+     <div class="gambar-wrapper">
+  <img src="tugas-islam/abad8-6.jpg.webp" class="gambar" alt="Gambar Sejarah Abad VIII">
+</div>
+      <p>Pada masa ini:
+        -Masyarakat Nusantara masih menganut Hindu-Buddha dan kepercayaan lokal.
+        -Islam hanya dikenal di wilayah pesisir lewat pedagang.
+        -Penyebaran Islam masih bersifat non-formal dan berdampak sosial budaya.</p>
+    </div>
+<div id="Abad IX" class="card">
+  <h2>Abad IX</h2>
+  <p>Perkembangan Islam Di Nusantara Pada Abad XII Masehi (800 – 900 M).</p>
+</div>
+
+<div id="Abad X" class="card">
+  <h2>Abad X</h2>
+  <p>Perkembangan Islam di Nusantara pada Abad X (900–1000 M).</p>
+</div>
+
+<div id="Abad XI" class="card">
+  <h2>Abad XI</h2>
+  <p>Perkembangan Islam pada Abad XI (Abad ke-11 Masehi).</p>
+</div>
+
+<div id="Abad XII" class="card">
+  <h2>Abad XII</h2>
+  <p>Perkembangan Islam di Indonesia pada Abad XII (Abad ke-12 Masehi).</p>
+</div>
+
+<div id="Abad XIII" class="card">
+  <h2>Abad XIII</h2>
+  <p>Perkembangan Islam di Indonesia pada Abad XIII (Abad ke-13 Masehi).</p>
+</div>
+
+<div id="anggota" class="card">
+  <h2>Anggota Kelompok</h2>
+  <ul>
+    <li>Nur Afni Oktavia</li>
+    <li>Nisma Gita Paputungan</li>
+    <li>Anindita Mifta</li>
+    <li>Raffi Rahidan</li>
+  </ul>
+</div>
+
+</div>
+
+<script>
+const sections = document.querySelectorAll('.card');
+
+function show(id){
+  sections.forEach(s => s.style.display='none');
+  const el=document.getElementById(id);
+  if(el) el.style.display='block';
+  removeHighlight();
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+  show('beranda');
+});
+
+function liveSearch(){
+  const input=document.getElementById("searchInput").value.toLowerCase();
+  const results=document.getElementById("searchResults");
+  results.innerHTML="";
+
+  if(input===""){
+    results.style.display="none";
+    removeHighlight();
+    return;
+  }
+
+  sections.forEach(sec=>{
+    if(sec.innerText.toLowerCase().includes(input)){
+      const div=document.createElement("div");
+      div.textContent=sec.querySelector("h2").innerText;
+      div.onclick=()=>{
+        show(sec.id);
+        highlightText(input);
+        results.style.display="none";
+      };
+      results.appendChild(div);
+    }
+  });
+
+  results.style.display=results.innerHTML ? "block" : "none";
+}
+
+function highlightText(word){
+  sections.forEach(sec=>{
+    sec.innerHTML=sec.innerHTML.replace(
+      new RegExp(`(${word})`,"gi"),
+      `<mark>$1</mark>`
+    );
+  });
+}
+
+function removeHighlight(){
+  sections.forEach(sec=>{
+    sec.innerHTML=sec.innerHTML.replace(/<\/?mark>/g,"");
+  });
+}
+</script>
+
+</body>
+</html>
