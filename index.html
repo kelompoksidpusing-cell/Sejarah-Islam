@@ -632,19 +632,26 @@ function liveSearch() {
 }
 
 function highlightText(word) {
-  sections.forEach(sec => {
-    sec.innerHTML = sec.innerHTML.replace(
+  const elements = document.querySelectorAll(
+    ".card p, .card h2, .card h3, .card h4, .card b"
+  );
+
+  elements.forEach(el => {
+    const text = el.textContent;
+    el.innerHTML = text.replace(
       new RegExp(`(${word})`, "gi"),
-      `<mark>$1</mark>`
+      "<mark>$1</mark>"
     );
   });
 }
 
 function removeHighlight() {
-  sections.forEach(sec => {
-    sec.innerHTML = sec.innerHTML.replace(/<\/?mark>/g, "");
+  const marks = document.querySelectorAll("mark");
+  marks.forEach(m => {
+    m.replaceWith(m.textContent);
   });
 }
+
 </script>
 
 </body>
