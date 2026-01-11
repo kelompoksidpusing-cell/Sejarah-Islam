@@ -728,15 +728,7 @@ function show(id) {
   const el = document.getElementById(id);
   if (el) el.style.display = 'block';
   removeHighlight();
-  
-  // ================= STICKY HEADER CUMA DI BERANDA =================
-  const header = document.querySelector('.top-header');
-  
-  if (id === 'beranda') {
-    header.classList.add('sticky-mode');
-  } else {
-    header.classList.remove('sticky-mode');
-  }
+}
 </script>
 
 </body>
