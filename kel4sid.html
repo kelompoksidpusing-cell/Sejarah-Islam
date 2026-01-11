@@ -28,7 +28,19 @@ h2, h3, h4 {
   padding: 16px 30px;
   background: #5A3E2B;
   color: white;
+  
+ /* TAMBAHAN UNTUK STICKY */
+  position: static;
+  top: 0;
+  z-index: 1000;
 }
+
+/* AKTIF SAAT BERANDA */
+.top-header.sticky {
+  position: sticky;
+  top: 0;
+}
+
 .top-header h1 {
   font-size: 20px;
   margin: 0;
@@ -642,12 +654,20 @@ function show(id) {
   const el = document.getElementById(id);
   if (el) {
     el.style.display = 'block';
-
-    //*INI UNTUK SCROLL KE ATAS AUTO PAS MAU MASUK ATAU KELUAR BAB YAA*/
+/*ini buat scroll ke atas langsung gengs*/
     window.scrollTo({
-      top: el.offsetTop - 400,
+      top: el.offsetTop - 600,
       behavior: 'smooth'
     });
+  }
+
+  /* Ini buat header sticky yang ngikutin tapi cuman di beranda yeee*/
+  const header = document.querySelector('.top-header');
+
+  if (id === 'beranda') {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
   }
 
   removeHighlight();
