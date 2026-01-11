@@ -21,7 +21,6 @@ h2, h3, h4 {
 }
 
 /* ================= HEADER ================= */
-/* ================= HEADER ================= */
 .top-header {
   display: flex;
   justify-content: space-between;
@@ -29,6 +28,11 @@ h2, h3, h4 {
   padding: 16px 30px;
   background: #5A3E2B;
   color: white;
+  /* TIDAK ada position: sticky di sini */
+}
+
+/* Header sticky HANYA untuk beranda */
+.top-header.sticky-mode {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -716,6 +720,23 @@ function scrollToTop() {
     top: 0,
     behavior: 'smooth'
   });
+}
+  const sections = document.querySelectorAll('.card');
+
+function show(id) {
+  sections.forEach(s => s.style.display = 'none');
+  const el = document.getElementById(id);
+  if (el) el.style.display = 'block';
+  removeHighlight();
+  
+  // ================= STICKY HEADER CUMA DI BERANDA =================
+  const header = document.querySelector('.top-header');
+  
+  if (id === 'beranda') {
+    header.classList.add('sticky-mode');
+  } else {
+    header.classList.remove('sticky-mode');
+  }
 }
 </script>
 
