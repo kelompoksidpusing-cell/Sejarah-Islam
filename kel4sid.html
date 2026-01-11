@@ -28,9 +28,7 @@ h2, h3, h4 {
   padding: 16px 30px;
   background: #5A3E2B;
   color: white;
-  /* TIDAK ada position: sticky di sini */
 }
-
 .top-header h1 {
   font-size: 20px;
   margin: 0;
@@ -713,15 +711,6 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
-  const sections = document.querySelectorAll('.card');
-
-function show(id) {
-  sections.forEach(s => s.style.display = 'none');
-  const el = document.getElementById(id);
-  if (el) el.style.display = 'block';
-  removeHighlight();
-    }
- }
 </script>
 
 </body>
