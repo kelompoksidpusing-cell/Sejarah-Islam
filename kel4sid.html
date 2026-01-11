@@ -643,15 +643,16 @@ function show(id) {
   if (el) {
     el.style.display = 'block';
 
-    //*UNTUK SCROLL KE ATAS BAB LANGSUNG YAAA*/
-    el.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+    //*INI UNTUK SCROLL KE ATAS AUTO PAS MAU MASUK ATAU KELUAR BAB YAA*/
+    window.scrollTo({
+      top: el.offsetTop - 200,
+      behavior: 'smooth'
     });
   }
 
   removeHighlight();
 }
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
