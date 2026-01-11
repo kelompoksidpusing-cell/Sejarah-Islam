@@ -181,7 +181,44 @@ h2, h3, h4 {
   font-weight: bold;
   color: #be781b;
 }
+/* ================= FLOATING BOTTOM BAR ================= */
+.bottom-nav {
+  position: fixed;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+  background: rgba(90, 62, 43, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: bottom 0.3s ease;
+}
 
+.bottom-nav.show {
+  bottom: 0;
+}
+
+.bottom-nav-btn {
+  background: white;
+  color: #0b4fa3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.bottom-nav-btn:hover {
+  background: #e6eefb;
+  transform: translateY(-2px);
+}
 /* ================= RESPONSIVE HP ================= */
 @media (max-width:768px){
   .top-header{
@@ -594,6 +631,13 @@ mark {
   </div>
 
 </div>
+</div>
+
+<!-- FLOATING BOTTOM NAVIGATION -->
+<div class="bottom-nav" id="bottomNav">
+  <button class="bottom-nav-btn" onclick="show('beranda')">🏠 Kembali ke Beranda</button>
+  <button class="bottom-nav-btn" onclick="scrollToTop()">⬆ Ke Atas</button>
+</div>
 
 <script>
 const sections = document.querySelectorAll('.card');
@@ -656,7 +700,23 @@ function removeHighlight() {
     m.replaceWith(m.textContent);
   });
 }
+// ================= FLOATING BOTTOM NAV =================
+const bottomNav = document.getElementById('bottomNav');
 
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    bottomNav.classList.add('show');
+  } else {
+    bottomNav.classList.remove('show');
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 </script>
 
 </body>
