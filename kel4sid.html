@@ -638,15 +638,21 @@ const sections = document.querySelectorAll('.card');
 
 function show(id) {
   sections.forEach(s => s.style.display = 'none');
+
   const el = document.getElementById(id);
-  if (el) el.style.display = 'block';
-  el.scrollIntoView({
-  behavior: 'smooth',
-  block: 'start'
-   });
+  if (el) {
+    el.style.display = 'block';
+
+    //*UNTUK SCROLL KE ATAS BAB LANGSUNG YAAA*/
+    el.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   }
+
   removeHighlight();
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
   show('beranda');
